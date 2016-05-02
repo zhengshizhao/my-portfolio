@@ -108,13 +108,6 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
-header .circle {
-    background: red;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px; 
-    text-align: center;
-}
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -197,7 +190,9 @@ section.success a.active {
     outline: 0;
     color: #2c3e50;
 }
-
+section .skill-circle img{
+    margin: 0 auto;
+}
 @media(max-width:767px) {
     section {
         padding: 75px 0;
