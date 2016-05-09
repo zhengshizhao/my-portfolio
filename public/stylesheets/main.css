@@ -96,21 +96,33 @@ header img{
     border-radius: 90%; 
 }
 
-header .intro-text .name {
+/*header .intro-text .name {
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.3em;
+    font-weight: 500;
+}*/
+
+header .intro-text .skills{ 
+    
+    font-size: 1.25em;
+    font-weight: 300; 
+}
+header .intro-text .skills .core-stack{
+    text-transform: none;
+    color: #233140;
+}
+header .intro-text .skills .proficient{
+    text-transform: none;
+    color: #2c3e50;
+}
+header .intro-text .skills .experience{
+    text-transform: none;
+    color: #2f4c60;
 }
 
-header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
-}
-header h4 span {
-    text-transform: none;
-}
+
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -193,9 +205,7 @@ section.success a.active {
     outline: 0;
     color: #2c3e50;
 }
-section .skill-circle img{
-    margin: 0 auto;
-}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
@@ -204,6 +214,10 @@ section .skill-circle img{
     section.first {
         padding-top: 75px;
     }
+}
+#about h3 span {
+    text-transform: none;
+    text-align: center;
 }
 #portfolio .portfolio-item {
     right: 0;
