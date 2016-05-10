@@ -62,8 +62,9 @@ hr.star-light {
 }
 
 hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
+    color:  #313567;
+    background-color: #fff;
+    border-radius: 90%;
 }
 
 hr.star-primary {
@@ -185,7 +186,7 @@ header .btn-outline:hover,
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    background-color: #303f60;
+    background-color: #313567;
     opacity: 0.6;
     filter: alpha(opacity=60);
 };
@@ -217,7 +218,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #313567;
 }
 
 section.success a,
@@ -298,7 +299,7 @@ section.success a.active {
 
 #portfolio hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #313567;
 }
 
 @media(min-width:767px) {
