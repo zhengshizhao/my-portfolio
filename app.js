@@ -8,6 +8,8 @@ var swig = require('swig');
 
 var routes = require('./routes/index');
 
+var dogstatsd = require('./datadogreport');
+
 var app = express();
 
 // view engine setup
@@ -57,5 +59,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
+dogstatsd.increment('page.views');
 
 module.exports = app;
