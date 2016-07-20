@@ -8,7 +8,7 @@ var swig = require('swig');
 
 var routes = require('./routes/index');
 
-var dogstatsd = require('./datadogreport');
+var datadog = require('./datadogreport');
 
 var app = express();
 
@@ -26,6 +26,8 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')))
+
+app.use(datadog.connet_datadog)
 app.use('/', routes);
 
 // catch 404 and forward to error handler
@@ -59,6 +61,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
-dogstatsd.increment('page.views');
+datadog.dogstatsd.increment('page.views');
 
 module.exports = app;
